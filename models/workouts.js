@@ -28,7 +28,7 @@ const exerciseSchema = new Schema({
         }
     }],
     date: {
-        type:Date,
+        type: Date,
         default: Date.now()
     }
 });
