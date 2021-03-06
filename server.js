@@ -5,9 +5,9 @@ const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3000;
 
 const app = express();
-const db = require("./models");
+const db = require("./models/workouts");
 
-app.use(logger("dev"));
+app.use(morgan("dev"));
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
