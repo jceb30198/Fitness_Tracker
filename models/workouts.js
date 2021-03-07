@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const exerciseSchema = new Schema({
-    exercise: [{
+    exercises: [{
         type: {
             type: String,
             trim: true
@@ -27,9 +27,12 @@ const exerciseSchema = new Schema({
             type: Number
         }
     }],
-    date: {
+    day: {
         type: Date,
         default: Date.now()
+    },
+    totalDuration: {
+        type: Number
     }
 });
 
